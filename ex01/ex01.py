@@ -1,7 +1,7 @@
 from collections import defaultdict
 def group_anagrams(strs: list[str]) -> list[list[str]]:
         anagrams_dict = defaultdict(list)
-        for s in strs: # n
+        for s in strs: 
             count = [0] * 26
             for c in s:
                 count[ord(c) - ord("a")] += 1
